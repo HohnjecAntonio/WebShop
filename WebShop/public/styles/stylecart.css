@@ -1,0 +1,182 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+#vrh{
+    background-color: black;
+    display: table;
+    min-height: 70px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 8px;
+}
+
+#podnozje{
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    
+}
+
+#podnozje h4{
+    margin: 5px;
+    min-height: 25px;
+}
+
+body{
+    background: linear-gradient(to bottom, black 0%, black 65px, white 65px, white 100%);
+    background-repeat: no-repeat;
+    border: 1px solid black;
+}
+
+tr{
+    width: 100%;
+}
+
+.zaglavlje{
+    min-height: 70px;
+    text-align: center;
+}
+
+#zaglavlje{
+    height: 60px;
+    font-size: 22px;
+    color: rgb(255, 255, 255);
+}
+
+#zaglavlje img{
+    position: relative;
+    display: inline;
+}
+
+#cartitems{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10;
+    font-weight: bold;
+    color: rgb(255, 255, 255) !important;
+}
+
+#logotip{
+    min-width: 100px;
+    width: 15%;
+    max-width: 150px;
+    font-style: italic;
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+#nazKat{
+    width: 100%;
+    min-width: 100px;
+    border: 1px solid black;
+}
+
+#kosIcon{
+   min-width: 100px;
+   width: 15%;
+   max-width: 150px;
+   border: 1px solid black;
+}
+
+#kosIcon img{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#kosarica{
+    width: 100%;
+    display: block;
+    position: relative;
+    min-height: 80vh;
+    border: 1px solid black;
+    min-width: 400px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+#alat{
+    width: 60%;
+    min-width: 400px;
+    position: relative;
+    border: 1px solid black;
+    display: block;
+    margin: 10px auto;
+    min-height: 400px;
+    height: max-content;
+}
+
+#nazProizvod, #kolicina{
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    padding: 0px;
+    list-style: none;
+}
+
+#nazProizvod{
+    float: left;
+    width: 25%;
+    margin: 5px;
+    text-align: center;
+}
+
+#kolicina{
+    float: right;
+    width: 25%;
+    margin: 5px;
+    text-align: center;
+}
+
+#kolicina p{
+    display: inline-block;
+    margin: 2px;
+    padding: 5px;
+    border: 1px solid black;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+}
+
+#kolicina h4{
+    display: inline-block;
+    margin: 2px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: black;
+}
+
+#kolicina li{
+    width: 200px;
+    height: 50px;
+    float: right;
+}
+
+#nazProizvod li{
+    width: 200px;
+    height: 50px;
+    float: left;
+}
+
+#nazProizvod h3{
+    width: 200px;
+    height: 50px;
+    float: left;
+}
+
+#kolicina h3{
+    width: 200px;
+    height: 50px;
+    float: right;
+}

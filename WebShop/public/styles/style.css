@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+body{
+    background-color: white;
+}
+
+#dokument{
+    display: table;
+    min-height: 70px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 8px;
+}
+
+#vrh{
+    background-color: black;
+    display: table;
+    min-height: 70px;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 8px;
+}
+
+#podnozje{
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+}
+
+#podnozje h4{
+    margin: 5px;
+    min-height: 25px;
+}
+
+#zaglavlje{
+    height: 60px;
+    font-size: 22px;
+    color: white;
+}
+
+#zaglavlje img{
+    position: relative;
+    display: inline;
+}
+
+#dobrodoslica{
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    z-index: 1;
+    color: rgb(0, 0, 82);
+    padding: 5px;
+    border: 1px solid rgb(0, 0, 82);
+    border-radius: 5px;
+    text-align: center;
+    left: 0px;
+    right: 0px;
+}
+
+#cartitems{
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10;
+    font-weight: bold;
+    color: rgb(255, 255, 255) !important;
+}
+
+#logotip{
+    min-width: 100px;
+    max-width: 150px;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#nazKat{
+    width: 70%;
+    min-width: 100px;
+}
+
+#kosIcon{
+   min-width: 100px;
+   max-width: 150px;
+}
+
+#kosIcon img{
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.zaglavlje{
+    min-height: 70px;
+    text-align: center;
+}
+
+#izbornik{
+    min-width: 100px;
+    border: 1px solid black;
+}
+
+#sadrzaj{
+    border: 1px solid black;
+    padding: 0px;
+    overflow: hidden;
+    position: relative;
+    min-height: 600px;
+    min-width: 500px;
+}
+
+ul, li{
+    width: 100%;
+    min-height: 30px;
+    text-align: center;
+    padding: 0px;
+    margin: 7px 0px;
+    z-index: -1;
+}
+
+#kategorije{
+    width: 100%;
+    padding: 30px 0px;
+    display: block;
+    text-align: center;
+}
+
+#pozadina{
+    margin: 0px;
+    position: absolute;
+    min-width: 100%;
+    min-height: 600px;
+    max-width: 150%;
+    bottom: 0px;
+}
+
+#tijelo{
+    height: 500px;
+}
+
+@media only screen and (min-width: 900px){
+    #pozadina{
+        margin-bottom: -150px;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    #pozadina{
+        margin-bottom: -300px;
+    }
+}
+
+#show{
+    height: 300px;
+}
+
+#info, #katsadrzaj{
+    border: 1px solid black;
+    position: relative;
+    min-height: 300px;
+}
+
+#info a{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.spant{
+    position: relative;
+    width: 150px;
+    height: 350px;
+    border: 1px solid black;
+    display: inline-block;
+    vertical-align: top;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.spant img{
+    display: block;
+    max-width: 85%;
+    height: normal;
+    top: 0px;
+    margin: 10px;
+}
+
+.spant h4{
+    display: block;
+    margin: 0px;
+    padding: 10px 4px;
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    text-align: center;
+}
