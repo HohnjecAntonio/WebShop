@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "/styles/style.css">
+    <script src = "/scripts/prvi.js" defer></script>
+</head>
+<body>
+    <%- include('./partials/header.ejs') %>
+
+    <table id = "dokument">
+        <tr id = "tijelo">
+            <td id = "izbornik" class = "tijelo"> 
+                <div id = "kategorije">
+                    <h3>Kategorije:</h3>
+                    <ul id = "katlist">
+                        <% for(index in data.categories){ %>
+                            <% console.log(index + " " + data.categories[index].name) %>
+                            <li id = "li" + <%= index %> >
+                                <a href = "/home/getProducts/<%= index %>?sID=<%= sessionID %>">
+                                    <%= data.categories[index].name %>
+                                </a>
+                            </li>
+                        <% } %>
+                    </ul>
+                </div>
+            </td>
+            <td id = "sadrzaj" class = "tijelo" colspan="2">
+                <img id = "pozadina" src="/images/background/pozadina.jpg" alt = "pozadina.jpg">
+                <h2 id = "dobrodoslica">Dobro došli u web trgovinu ExPortiered!</h2>
+            </td>
+        </tr>
+        <tr id = "show">
+            <td id="info">
+                <a id = "kontakt">Kontakt</a>
+                <a id = "newsletter">Newsletter</a>
+                <a id = "pretplata">Pretplati se</a>
+            </td>
+
+            <td id = "katsadrzaj" colspan="2">
+                <% for (proizvod of data.categories[idKat].products) {%>
+                    <a class = "spant" href = '/home/getProducts/<%= idKat %>?sID=<%= sessionID %>'>
+                    <img src="<%= proizvod.image %>">
+                    <h4> 
+                        <%= proizvod.name %>
+                        <br>
+                        (<%= data.categories[idKat].name %>)
+                    </h4>
+                    </a>
+                <% } %>
+            </td>
+
+        </tr>
+
+    </table>
+
+    <%- include('./partials/footer.ejs') %>
+
+</body>
+<footer>
+
+</footer>
+
+
+</html>

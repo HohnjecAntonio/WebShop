@@ -1,0 +1,16 @@
+<table id = "vrh">
+    <tr id = "zaglavlje">
+        <td id = "logotip" class = "zaglavlje">ExPortiered</td>
+        <td id = "nazKat" class = "zaglavlje">
+            <% try{%>
+            <%= data.categories[idKat].name %>
+            <% }catch(error) {%>
+                Košarica
+            <%} %>
+        </td>
+        <td id = "kosIcon" class = "zaglavlje" onclick="window.open('cart?sID=<%= sessionID %>')">
+            <img src = "/images/cart/carticon.png">
+            <p id = "cartitems">0</p>
+        </td>
+    </tr>
+</table>
